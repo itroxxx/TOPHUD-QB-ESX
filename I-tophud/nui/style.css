@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('fonts/Quicksand.ttf') format('truetype');
+    font-weight: normal;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    cursor: none; /* Hide cursor */
+}
+
+.tophud {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px #00000096;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+    width: auto;
+    justify-content: space-around;
+    z-index: 1000;
+}
+
+.hud_element {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px; /* Increase font size */
+}
+
+.hud_element i {
+    font-size: 20px; /* Increase icon size */
+    margin-right: 8px; /* Increase space between icon and text */
+}
+
+.hud-styling {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #444;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.hud-styling h2 {
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+
+.hud-styling label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #f0f0f0;
+}
+
+.hud-styling label i {
+    margin-right: 8px;
+    font-size: 18px;
+    color: #f0f0f0;
+}
+
+.hud-styling input[type="color"],
+.hud-styling input[type="range"] {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.hud-styling button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #444;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hud-styling button:hover {
+    background-color: #007bff;
+}
